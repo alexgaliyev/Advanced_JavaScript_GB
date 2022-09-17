@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Burger</title>
+</head>
+<body>
+    <form>
+        <h1>Бургер</h1>
+        <fieldset>
+            <legend>Выберите размер бургера:</legend>
+            <div>
+                <input type="radio" name="burger" date-price = "50" date-calories = "20" class = "burg" checked>
+                <label for="huey">Маленький (50 рублей, 20 калорий).</label>
+            </div>
+            <div>
+                <input type="radio" name="burger" date-price = "100" date-calories = "40" class = "burg">
+                <label for="huey">Большой (100 рублей, 40 калорий).
+                </label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Гамбургер может быть с одним из нескольких видов начинок:</legend>
+            <div>
+                <input type="radio" name="filling" date-price = "10" date-calories = "20" class = "burg" checked>
+                <label for="huey">С сыром (+10 рублей, +20 калорий).</label>
+            </div>
+            <div>
+                <input type="radio" name="filling" date-price = "20" date-calories = "5" class = "burg">
+                <label for="huey"> С салатом (+20 рублей, +5 калорий).</label>
+            </div>
+            <div>
+                <input type="radio" name="filling" date-price = "15" date-calories = "10" class = "burg">
+                <label for="huey">С картофелем (+15 рублей, +10 калорий).</label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Гамбургер может быть с одним из нескольких видов начинок:</legend>
+            <div>
+                <input type="checkbox" name="additive" date-price = "10" date-calories = "20" class = "burg" checked>
+                <label for="huey">С сыром (+10 рублей, +20 калорий).</label>
+            </div>
+            <div>
+                <input type="checkbox" name="additive" date-price = "20" date-calories = "5" class = "burg">
+                <label for="huey"> С салатом (+20 рублей, +5 калорий).</label>
+            </div>
+        </fieldset>
+        <h3>ИТОГО:</h3>
+        <p>Калорийность:<span id = "calories"></span></p>
+        <p>Цена:<span id = "price"></span></p>
+        <button type="button" id = "result">Готово</button>
+    </form>
+    <script src="js/main.js"></script>
+</body>
+</html>
