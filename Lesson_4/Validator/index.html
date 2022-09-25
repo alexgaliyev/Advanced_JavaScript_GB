@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Интернет-магазин</title>
+</head>
+<body>
+    <main>
+        <form action="">
+            <fieldset>
+                <legend>Форма сообщения</legend>
+                <p>Имя</p>
+                <input type="text" placeholder="Только буквы." id="myname"><span id="myname_error" class="error"></span><br>
+                <p>Номер телефона</p>
+                <input type="text" placeholder="+7(000)000-0000" id="tel"><span id="tel_error" class="error"></span><br>
+                <p>Электронная почта</p>
+                <input type="text" placeholder="mymail@mail.ru" id="email"><span id="email_error" class="error"></span><br>
+                <p>Сообщение</p>
+                <textarea id="message" cols="30" rows="20" placeholder="Сообщение"></textarea><span id="message_error" class="error"></span><br>
+                <input type="button" value="Отправить" onclick="check(myname.value, regName, myname.id), check(tel.value, regTel, tel.id), check(email.value, regEmail, email.id), check(message.value, regMessage, message.id)">
+            </fieldset>
+        </form>
+    </main>
+    <script src="js/main.js"></script>
+</body>
+</html>
